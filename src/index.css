@@ -1,0 +1,22 @@
+:root {
+   --bright-blue: hsl(220, 98%, 61%);
+   --light-gray: hsl(236, 33%, 92%);
+   --light-v-grayish: hsl(236, 33%, 92%);
+   --light-grayshish: hsl(233, 11%, 84%);
+   --dark-grayish: hsl(236, 9%, 61%);
+   --v-dark-blue: hsl(235, 21%, 11%);
+   --v-dark-d: hsl(235, 24%, 19%);
+   --light-grayish-blue: hsl(234, 39%, 85%);
+   --light-grayish-blue-hover: hsl(236, 33%, 92%);
+   --dark-grayish: hsl(237, 14%, 26%);
+   --font-family: 'Josefin Sans', sans-serif;
+   --font-w: 400;
+   --font-weight: 700;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: var(--font-family);
+}

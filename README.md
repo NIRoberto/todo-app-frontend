@@ -1,4 +1,4 @@
-![GitHub CI](https://github.com/NIRoberto/todo-app-frontend/workflows/GitHub%20CI/badge.svg)
+![GitHub CI](https://github.com/NIRoberto/todo-app-frontend/workflows/GitHub%20CI/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/ef57c2cb8879195446b8/maintainability)](https://codeclimate.com/github/NIRoberto/todo-app-frontend/maintainability)
 # Frontend Mentor - Todo app
 
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)

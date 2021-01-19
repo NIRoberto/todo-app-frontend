@@ -1,3 +1,4 @@
+![GitHub CI](https://github.com/NIRoberto/todo-app-frontend/workflows/GitHub%20CI/badge.svg)
 # Frontend Mentor - Todo app
 
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)

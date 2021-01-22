@@ -94,7 +94,7 @@ input[type="checkbox"] {
   border-radius: 50%;
 }
 input[type="checkbox"]:after {
-  content: url("../../public/images/icon-check.svg");
+  content: url("../images/icon-check.svg");
   display: none;
 }
 

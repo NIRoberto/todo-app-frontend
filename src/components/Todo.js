@@ -1,7 +1,10 @@
 import React, { useState, Fragment } from "react";
 import "../style/todoStyle.css";
-import lightBg from "../../public/images/icon-sun.svg";
-import DarkBg from "../../public/images/icon-moon.svg";
+import lightBg from "../images/icon-sun.svg";
+import DarkBg from "../images/icon-moon.svg";
+import bgLight from "../images/bg-desktop-light.jpg";
+import bgDark from "../images/bg-desktop-Dark.jpg";
+
 import TodoList from "./TodoList";
 
 const Todo = () => {
@@ -13,11 +16,7 @@ const Todo = () => {
         <div
           className="main-item1"
           style={{
-            backgroundImage: `${
-              dark
-                ? " url('../../public/images/bg-desktop-dark.jpg')"
-                : "url('../../public/images/bg-desktop-light.jpg')"
-            } `,
+            backgroundImage: `${dark ? `url(${bgDark})` : `url(${bgLight})`} `,
           }}
         />
         <div

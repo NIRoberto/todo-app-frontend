@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from "react";
 import TodoForm from "./TodoForm";
 import TodoFooter from "./TodoFooter";
-import cross from "../images/icon-cross.svg";
 // eslint-disable-next-line react/prop-types
 const TodoList = ({ dark }) => {
   // eslint-disable-next-line no-unused-vars
@@ -86,11 +85,11 @@ const TodoList = ({ dark }) => {
                       {name}
                     </span>
 
-                    <img
-                      src={cross}
+                    <strong
+                      className="fas fa-times"
+                      style={{ color: "#444" }}
                       onClick={() => deleteTodo(id)}
-                      alt="Delete one todo"
-                    />
+                    ></strong>
                   </div>
                 </li>
               </>

@@ -1,10 +1,10 @@
-import React from 'react';
-import Todo from './components/Todo';
+import React, { Fragment } from "react";
+import Todo from "./components/Todo";
 
 const App = () => (
-  <div>
+  <Fragment>
     <Todo />
-  </div>
+  </Fragment>
 );
 
 export default App;

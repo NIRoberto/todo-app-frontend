@@ -1,10 +1,5 @@
-import React, { useState, Fragment } from "react";
-import "../style/todoStyle.css";
-import lightBg from "../images/icon-sun.svg";
-import DarkBg from "../images/icon-moon.svg";
-import bgLight from "../images/bg-desktop-light.jpg";
-import bgDark from "../images/bg-desktop-Dark.jpg";
-
+import React, { useState } from "react";
+// import "../style/todoStyle.css";
 import TodoList from "./TodoList";
 
 const Todo = () => {
@@ -16,9 +11,16 @@ const Todo = () => {
         <div
           className="main-item1"
           style={{
-            backgroundImage: `${dark ? `url(${bgDark})` : `url(${bgLight})`} `,
+            backgroundImage: `${
+              dark
+                ? `url('https://image.shutterstock.com/image-vector/dark-blue-vector-background-curved-260nw-1031871925.jpg')`
+                : `url('https://www.wallpapertip.com/wmimgs/40-407167_dark-blue-mountain-wallpaper.jpg')`
+            } `,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "100%",
           }}
         />
+
         <div
           className="main-item2"
           style={{
@@ -32,11 +34,10 @@ const Todo = () => {
       <div className="info-item">
         <div className="header">
           <h3> TODO</h3>
-          <img
-            src={dark ? lightBg : DarkBg}
+          <span
+            className={dark ? "fas fa-moon" : "fas fa-sun"}
             onClick={() => setDark(!dark)}
-            alt="bright theme"
-          />
+          ></span>
         </div>
 
         <TodoList dark={dark} />

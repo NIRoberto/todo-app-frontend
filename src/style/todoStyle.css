@@ -56,9 +56,11 @@
   font-size: 45px;
 }
 
-.info-item .header img {
-  height: 1.5em;
+.info-item .header span {
   cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  padding-top: 0.3em;
 }
 .info-item .create-input form {
   background: #25273c;
@@ -96,10 +98,16 @@ input[type="checkbox"] {
 input[type="checkbox"]:after {
   content: url("../images/icon-check.svg");
   display: none;
+  text-decoration: none;
+  font-size: 1em;
+}
+strong {
+  color: #32344b;
 }
 
 input[type="checkbox"]:hover {
   border: 1px solid hsl(192, 100%, 67%);
+  text-decoration: none;
 }
 #check:hover {
   border: 1px solid hsl(192, 100%, 67%) !important;
@@ -114,6 +122,7 @@ input[type="checkbox"]:checked {
 }
 input[type="checkbox"]:checked::after {
   display: block;
+  color: white;
 }
 
 .info-item .todo-list {

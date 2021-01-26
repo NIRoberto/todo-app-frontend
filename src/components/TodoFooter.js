@@ -1,5 +1,6 @@
 import React, { useEffect, Fragment, useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 const TodoFooter = ({ dark, removeAll }) => {
   const [size, setSize] = useState(window.innerWidth);
 
@@ -49,5 +50,9 @@ const TodoFooter = ({ dark, removeAll }) => {
     </div>
   );
 };
+// TodoFooter.propTypes = {
+//   dark: PropTypes.object.isRequired,
+//   removeAll: PropTypes.object.isRequired,
+// };
 
 export default TodoFooter;

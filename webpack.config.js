@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: path.join(__dirname, "src", "index.js"),
   output: {
     publicPath: "/",
     path: path.join(__dirname, "build"),
@@ -17,9 +17,11 @@ module.exports = {
           {
             loader: "babel-loader",
           },
+          {
+            loader: "eslint-loader",
+          },
         ],
       },
-
       {
         test: /.(css)$/,
         use: ["style-loader", "css-loader"],
@@ -40,9 +42,13 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
+      },
     ],
   },
-
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
@@ -50,6 +56,7 @@ module.exports = {
     }),
   ],
   resolve: {
+    // allows us to do absolute imports from "src"
     modules: [path.join(__dirname, "src"), "node_modules"],
     extensions: ["*", ".js", ".jsx"],
   },
